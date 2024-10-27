@@ -22,8 +22,8 @@ class ChatService {
     try {
       const response = await openai.chat.completions.create({
         //model: "gpt-4o-mini",
-        model: "gpt-4o",
-        //model: "gpt-3.5-turbo",
+        //model: "gpt-4o",
+        model: "gpt-3.5-turbo",
         messages: [
           { role: "system", content: "Sen bir yardımcı asistansın." },
           { role: "user", content: userMessage },
