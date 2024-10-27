@@ -33,7 +33,7 @@ class ChatService {
       const botResponse = response.choices[0].message.content;
       await prisma.message.create({
         data: {
-            role:"user",
+            role:"chatgpt",
             message: userMessage,
             response: botResponse,
             timestamp: currentTime,
